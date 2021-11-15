@@ -12,19 +12,31 @@ public class Main {
         System.out.print("Введите число d: ");
         int d=in.nextInt();
         int m=0;
-        if ((a<=b)&&(a<=c)&&(a<=d)) {
+        int k=0;
+        if ((a>=b)&&(a>=c)&&(a>=d)) {
             m=a;
         }
-        if ((b<=a)&&(b<=c)&&(b<=d)) {
+        if ((b>=a)&&(b>=c)&&(b>=d)) {
             m=b;
         }
-        if ((c<=a)&&(c<=b)&&(c<=d)) {
+        if ((c>=a)&&(c>=b)&&(c>=d)) {
             m=c;
         }
-        if ((d<=a)&&(d<=b)&&(d<=c)) {
+        if ((d>=a)&&(d>=b)&&(d>=c)) {
             m=d;
         }
-        System.out.print("Наименьшее из четырех чисел: ");
+        System.out.print("Наибольшее из четырех чисел: ");
         System.out.println(m);
+        if (m==a){
+            k=k+1;
+        }if (m==b){
+            k=k+1;
+        }if (m==c){
+            k=k+1;
+        }if (m==d){
+            k=k+1;
+        }
+        System.out.print("Количество максимальных чисел: ");
+        System.out.println(k);
     }
 }
